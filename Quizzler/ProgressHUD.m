@@ -328,7 +328,7 @@
 	CGPoint center = CGPointMake(screen.size.width/2, (screen.size.height-heightKeyboard)/2);
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-		toolbarHUD.center = CGPointMake(center.x, center.y);
+        self->toolbarHUD.center = CGPointMake(center.x, center.y);
 	} completion:nil];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	if (viewBackground != nil) viewBackground.frame = window.frame;
